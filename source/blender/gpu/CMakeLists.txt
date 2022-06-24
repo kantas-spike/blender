@@ -34,7 +34,6 @@ set(INC
   ../../../intern/atomic
   ../../../intern/clog
   ../../../intern/ghost
-  ../../../intern/glew-mx
   ../../../intern/guardedalloc
   ../../../intern/mantaflow/extern
 )
