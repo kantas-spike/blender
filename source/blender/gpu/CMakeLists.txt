@@ -38,7 +38,9 @@ set(INC
   ../../../intern/mantaflow/extern
 )
 
-set(INC_SYS )
+set(INC_SYS
+  ${LibEpoxy_INCLUDE_DIRS}
+)
 
 set(SRC
   intern/gpu_batch.cc
@@ -216,6 +218,7 @@ endif()
 
 set(LIB
   ${BLENDER_GL_LIBRARIES}
+  ${LibEpoxy_LIBRARIES}
 )
 
 set(MSL_SRC
