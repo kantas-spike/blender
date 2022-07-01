@@ -11,7 +11,7 @@ set(INC
 )
 
 set(INC_SYS
-  ${LibEpoxy_INCLUDE_DIRS}
+  ${Epoxy_INCLUDE_DIRS}
   ${PYTHON_INCLUDE_DIRS}
 )
 
@@ -40,7 +40,7 @@ set(SRC
 )
 
 set(LIB
-  ${LibEpoxy_LIBRARIES}
+  ${Epoxy_LIBRARIES}
   ${PYTHON_LINKFLAGS}
   ${PYTHON_LIBRARIES}
 )

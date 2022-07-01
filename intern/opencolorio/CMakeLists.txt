@@ -36,7 +36,7 @@ if(WITH_OPENCOLORIO)
 
   list(APPEND INC_SYS
     ${OPENCOLORIO_INCLUDE_DIRS}
-    ${LibEpoxy_INCLUDE_DIRS}
+    ${Epoxy_INCLUDE_DIRS}
   )
 
   list(APPEND SRC

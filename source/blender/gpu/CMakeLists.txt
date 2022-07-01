@@ -39,7 +39,7 @@ set(INC
 )
 
 set(INC_SYS
-  ${LibEpoxy_INCLUDE_DIRS}
+  ${Epoxy_INCLUDE_DIRS}
 )
 
 set(SRC
@@ -218,7 +218,7 @@ endif()
 
 set(LIB
   ${BLENDER_GL_LIBRARIES}
-  ${LibEpoxy_LIBRARIES}
+  ${Epoxy_LIBRARIES}
 )
 
 set(MSL_SRC

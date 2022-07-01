@@ -223,8 +223,8 @@ if(WITH_SDL)
   endif()
 endif()
 
-set(EPOXY_ROOT_DIR ${LIBDIR}/libepoxy)
-find_package(LibEpoxy REQUIRED)
+set(EPOXY_ROOT_DIR ${LIBDIR}/epoxy)
+find_package(Epoxy REQUIRED)
 
 set(PNG_ROOT ${LIBDIR}/png)
 find_package(PNG REQUIRED)

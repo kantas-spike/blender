@@ -505,17 +505,17 @@ if(CYCLES_STANDALONE_REPOSITORY)
 endif()
 
 ###########################################################################
-# Libepoxy
+# Epoxy
 ###########################################################################
 
 if(CYCLES_STANDALONE_REPOSITORY)
   if((WITH_CYCLES_STANDALONE AND WITH_CYCLES_STANDALONE_GUI) OR
      WITH_CYCLES_HYDRA_RENDER_DELEGATE)
     if(MSVC AND EXISTS ${_cycles_lib_dir})
-      set(LibEpoxy_LIBRARIES "${_cycles_lib_dir}/libepoxy/lib/epoxy.lib")
-      set(LibEpoxy_INCLUDE_DIRS "${_cycles_lib_dir}/libepoxy/include")
+      set(Epoxy_LIBRARIES "${_cycles_lib_dir}/epoxy/lib/epoxy.lib")
+      set(Epoxy_INCLUDE_DIRS "${_cycles_lib_dir}/epoxy/include")
     else()
-      find_package(LibEpoxy REQUIRED)
+      find_package(Epoxy REQUIRED)
     endif()
   endif()
 endif()

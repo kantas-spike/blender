@@ -8,7 +8,7 @@ set(INC
 )
 
 set(INC_SYS
-  ${LibEpoxy_INCLUDE_DIRS}
+  ${Epoxy_INCLUDE_DIRS}
 )
 
 set(SRC
@@ -67,7 +67,7 @@ set(SRC
 )
 
 set(LIB
-  ${LibEpoxy_LIBRARIES}
+  ${Epoxy_LIBRARIES}
 )
 
 if(WITH_GHOST_DEBUG)
