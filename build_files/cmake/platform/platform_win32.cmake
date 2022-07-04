@@ -324,7 +324,11 @@ if(NOT JPEG_FOUND)
 endif()
 
 set(EPOXY_ROOT_DIR ${LIBDIR}/epoxy)
-find_package(Epoxy REQUIRED)
+windows_find_package(Epoxy REQUIRED)
+if(NOT EPOXY_FOUND)
+  set(Epoxy_INCLUDE_DIRS ${LIBDIR}/epoxy/include)
+  set(Epoxy_LIBRARIES ${LIBDIR}/epoxy/lib/libepoxy.lib)
+endif()
 
 set(PTHREADS_INCLUDE_DIRS ${LIBDIR}/pthreads/include)
 set(PTHREADS_LIBRARIES ${LIBDIR}/pthreads/lib/pthreadVC3.lib)
