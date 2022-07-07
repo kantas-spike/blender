@@ -483,7 +483,11 @@ Pythonでは、統合は既存型のサブクラスを定義することで実�
 オペレーターの例
 -----------------
 
-.. literalinclude:: __/__/__/__/release/scripts/templates_py/operator_simple.py
+.. comment
+   .. literalinclude:: __/__/__/__/release/scripts/templates_py/operator_simple.py
+
+.. include:: ../../../../release/scripts/templates_py/operator_simple.py
+   :code: python
 
 .. comment
    Once this script runs, ``SimpleOperator`` is registered with Blender
@@ -542,7 +546,11 @@ Panelの例
 パネルは、オペレーターと同じく、クラスとして登録されます。
 追加の ``bl_`` 変数は、パネルが表示しているコンテキストを設定するために使用されることに注目してください。
 
-.. literalinclude:: __/__/__/__/release/scripts/templates_py/ui_panel_simple.py
+.. comment
+   .. literalinclude:: __/__/__/__/release/scripts/templates_py/ui_panel_simple.py
+
+.. include:: ../../../../release/scripts/templates_py/ui_panel_simple.py
+   :code: python
 
 .. comment
    To run the script:
